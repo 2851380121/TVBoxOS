@@ -80,7 +80,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://share.nite07.com/api/v3/file/source/16740/sc.json?sign=SAJG3c7hVztARppf7sd7oT7yDAggy4WSYBmI99ef4V8%3D%3A0");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
